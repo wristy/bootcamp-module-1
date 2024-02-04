@@ -89,4 +89,6 @@ You will find this section much more challenging than the preceding ones. This i
 - [x] Safely unwrap optionals.
 
 
-TODO: move all challenge descriptions here for better readability.
+## Submission
+
+To submit your work, paste the link for the forked repo next to your name under Week 2 -> Assignment of the Student Dashboard (Notion).
