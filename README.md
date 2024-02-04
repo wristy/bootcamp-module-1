@@ -11,6 +11,30 @@
 - [ ] Safely unwrap optionals.
 
 
+## Requirement
+
+Fork this repo using the instructions outlined below.
+
+For each module, you'll be creating a fork of the module repo which will be
+associated with your account.
+
+To fork, click on the "Fork" button on this module's Github page.
+It should be located between "Watch" and "Star".
+
+![Image highlighting the Fork button on Github.](module0-img1.png)
+
+In the *Create a new fork* page, you shouldn't need to change anything, but
+it should have the following configuration:
+
+- Owner is your github account
+- Repository name is identical to forking repo (`bootcamp-module-1`)
+- The option to *copy the main branch only* is checked.
+
+![Image showing fork creation screen.](module0-img2.png)
+
+After pressing the *Create fork* button, you should be redirected to your
+newly forked repo page.
+
 ## Content
 
 ### Variables and Data Types
