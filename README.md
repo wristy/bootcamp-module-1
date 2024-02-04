@@ -35,6 +35,31 @@ it should have the following configuration:
 After pressing the *Create fork* button, you should be redirected to your
 newly forked repo page.
 
+### Clone a repo with Xcode
+
+1. Open the Xcode app and click `Clone Git Repository`
+
+![Image showing Github clone popup within forked repo.](module0-img4.png)
+
+2. Enter the URL of the git repo. Refer to the image below to locate the URL.
+   _Note:_ Make sure to clone the **SSH** url, _not_ the HTTPS url.
+   
+![Image showing Github clone popup within forked repo.](module0-img3.png)
+
+3. Select the folder you want to store the repo. You'll need this throughout
+   the course so don't just put it in your downloads!
+
+4. Xcode should now open up with the cloned repo. Or it'll crash. It's Xcode.
+
+5. If Xcode doesn't open immediately, go to the folder you just cloned and right click on `SwiftBasics.playground`, select Open With -> Xcode.
+
+#### Command line equivalent
+
+```
+cd [project destination path]
+git clone https://github.com/gtiosclub/bootcamp-module-1.git
+```
+
 ## Content
 
 ### Variables and Data Types
