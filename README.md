@@ -91,4 +91,6 @@ You will find this section much more challenging than the preceding ones. This i
 
 ## Submission
 
+Make sure you have committed and pushed your local changes to the remote repo, so that we can see your work when we access this link. Refer to module-0 and the Git slides from Day 2 if you are having trouble, or reach out via Discord.
+
 To submit your work, paste the link for the forked repo next to your name under Week 2 &rarr; Assignment of the Student Dashboard (Notion). Make sure you are logged into your Notion account, otherwise you won't have edit permissions.
