@@ -26,6 +26,19 @@ import Foundation
 var myPostCode: String? = "30332"
 var myAddress: String = "North Avenue, GT, "
 
+if let myPostCodeU = myPostCode {
+    myAddress += myPostCodeU
+}
+
+guard let myPoseCodeU = myPostCode else {
+    fatalError()
+}
+myAddress += myPoseCodeU
+
+myAddress += myPostCode!
+
+myAddress += myPostCode ?? ""
+
 /* CHALLENGE 2: If a rank exists (has a value, not nil), set the endOfGameSummary to "Congrats! You've achieved rank X in this round." where X is the value stored in myRank. Otherwise, set the endOfGameSummary to "You did not achieve a rank in this round. Better luck next time!". Repeat this logic using each of the following once:
         - “if let”
         - “guard let”
@@ -33,8 +46,22 @@ var myAddress: String = "North Avenue, GT, "
 
     Use fatalError() inside the 'else block' of your "guard let", so that Xcode doesn't complain.
  */
-var myRank: Int? = nil
+var myRank: Int? = 3
 var endOfGameSummary: String = "None"
+
+if let myRankU = myRank {
+    endOfGameSummary = "Congrats! You've achieved rank X in this round."
+} else {
+    endOfGameSummary = "You did not achieve a rank in this round. Better luck next time!"
+}
+
+guard let myRankUU = myRank else {
+    endOfGameSummary = "You did not achieve a rank in this round. Better luck next time!"
+    fatalError()
+}
+endOfGameSummary = "Congrats! You've achieved rank X in this round."
+
+endOfGameSummary = (myRank != nil) ? "Congrats! You've achieved rank X in this round." : "You did not achieve a rank in this round. Better luck next time!"
 
 /*
  CHALLENGE 3: You are currently cooking your lunch.
@@ -51,7 +78,27 @@ var endOfGameSummary: String = "None"
 */
 var foodStock: Int = 20
 var amountOfFoodInsidePan: Int? = 5
-var cookingMode: String? = nil
+var cookingMode: String? = "High"
+
+guard let amountOfFoodInsidePanU = amountOfFoodInsidePan, foodStock != 0 else {
+    print("I give up.")
+    fatalError()
+}
+
+if cookingMode != nil {
+    if cookingMode == "High" {
+        cookingMode = "Medium"
+    } else if cookingMode == "Medium" {
+        cookingMode = "Low"
+    } else if cookingMode == "Low" {
+        cookingMode = "Nil"
+    }
+    
+    foodStock -= 3
+    amountOfFoodInsidePan! += 3
+}
+
+
 
 
 
@@ -59,5 +106,7 @@ var cookingMode: String? = nil
 // If myString has no value, you can set it to 0.
 let myString: String? = "iOS Club"
 var length: Int = -1
+
+length = myString?.count ?? 0
 
 // <- [CLICK HERE TO RUN ME], don't worry if you get an error. It's probably because of the `fatalError()` call we told you to make.
